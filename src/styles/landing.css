@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+
+  :root {
+    --main-color: #FEF6EB;
+    --nav-btn: #353430;
+    --white:#FFFFFF;
+    --btn-hover: #24231F;
+    --text:#2B2A30;
+    --orange: #FC655F;
+    --para: #565560;
+  }
+
+  section {
+    padding: 2% 5%;
+  }
+
+.hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+nav{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn{
+  padding: 0.6rem 1.5rem;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 0.2rem;
+  margin: 1rem;
+  background-color: var(--nav-btn);
+  color: var(--white);
+  font-family: "urbanist";
+}
+.btn:hover{
+  border: none;
+  background-color: var(--btn-hover);
+  cursor: pointer;
+}
+.btn:active{
+  transform:scale(0.98);
+} 
+.overview{
+  font-size: 1.9rem;
+  margin-left: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  padding: 5% 15%;
+}
+.overview h1{
+  color: var(--text);
+  font-weight: 700;
+}
+.mark{
+  position: absolute;
+  top: 13rem;
+  left: 35rem;
+}
+span{
+  color: var(--orange);
+}
+.overview p{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 5vh;
+  color: var(--para);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+.upload{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.upload h2{
+  margin-top: -25px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--para); 
+}
+.btn2{
+  padding: 10px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #fbfbfc;
+  border: 1px solid #000000;
+  border-radius: 6px;
+}
+#footer{
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  right: 0;
+  margin-right: 30px;
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 400;
+  background: var(--main-color);
+  justify-content: end;
+  align-items: flex-end;
+  text-align: end;
+  color: var(--para);
+}

@@ -1,0 +1,76 @@
+:root {
+    --main-color: #FEF6EB;
+    --nav-btn: #353430;
+    --white:#FFFFFF;
+    --btn-hover: #24231F;
+    --text:#2B2A30;
+    --orange: #FC655F;
+    --dark-orange: #F52D25;
+    --para: #565560;
+  }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+.web{
+    font-size: 10px;
+    color: var(--para);
+    font-weight: 300;
+    text-align: start;
+    margin-left: 13rem;
+}
+form{
+    margin-top: 40px;
+}
+.in{
+     box-sizing: border-box;
+     width: 40%;
+     padding: 12px 15px;
+     outline-color: var(--orange);
+     background: #ffffff;
+     border: 1px solid #d0d5dd;
+     border-radius: 4px;
+     margin-right: 5px;
+    
+}
+
+  input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    color:var(--para) 
+  }
+
+  .bntn{
+    padding: 3px 30px;
+    border: none;
+    background-color: var(--orange);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bntn.bntn1{
+  font-family: 'Red Rose';
+    line-height: 31px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+  
+}
+.bntn.bntn1:hover{
+    background-color: var(--dark-orange);
+  }
+  .bntn.bntn1:active{
+    transform: scale(0.98);
+  }
