@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
 }
+.rate-main{
+    display: flex;
+    flex-direction: row;
+}
+
 .rate {
     float: left;
     height: 46px;
     padding: 0 10px;
-    display: flex;
-    flex-direction: row;
     margin-left: 20px;
     margin-bottom: 20px;
 }

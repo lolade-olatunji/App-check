@@ -1,12 +1,111 @@
 :root {
-    --main-color: #FEF6EB;
-    --nav-btn: #353430;
-    --white:#FFFFFF;
-    --btn-hover: #24231F;
-    --text:#2B2A30;
-    --orange: #FC655F;
-    --dark-orange: #CE6763;
-    --para: #565560;
+  --main-color: #fef6eb;
+  --nav-btn: #353430;
+  --white: #ffffff;
+  --btn-hover: #24231f;
+  --text: #2b2a30;
+  --orange: #fc655f;
+  --dark-orange: #f52d25;
+  --para: #565560;
+  --hoverSubmit: #4f4d47;
+  --place: #b1b0b9;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+.Aweb {
+  font-size: 10px;
+  color: var(--para);
+  font-weight: 500;
+  text-align: start;
+  margin-left: 0px;
+}
+.Aform {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.Ain {
+  box-sizing: border-box;
+  width: 20rem;
+  padding: 12px 15px;
+  outline-color: var(--para);
+  background: #ffffff;
+  border: 1px solid var(--place);
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+  color: var(--place);
+}
+
+.Abntn {
+  padding: 3px 30px;
+  border: none;
+  background-color: var(--nav-btn);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 14px;
+  margin-left: 5px;
+}
+.Abntn.Abntn1 {
+  font-family: "Red Rose";
+  line-height: 31px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+}
+.Abntn.Abntn1:hover {
+  background-color: var(--orange);
+  transition: 0.3s;
+}
+.Abntn.Abntn1:active {
+  transform: scale(0.98);
+}
+@media screen and (max-width: 490px) {
+  .Ain {
+    width: 14rem;
   }
-    
-    
+  .Abntn {
+    margin-left: 2px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Ain {
+    width: 100%;
+  }
+  .Abntn {
+    margin-left: 2px;
+  }
+  .Aform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .Abntn {
+    padding: 3px 90px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap");
+
+.modal-container {
+  /* position: absolute; */
+  width: 90%;
+  height: 90%;
+  padding: 20px 20px 100px 20px;
+  margin-top: 40px;
+  background: #fffbf5;
+  /* background: red; */
+  border-radius: 16px;
+}
+
+/* .modal-content {
+} */
+
+.modal-close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.modal-close p {
+  font-size: 20px;
+  color: #c4c4c4;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-heading-text {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+
+  text-align: center;
+  letter-spacing: -0.025em;
+
+  color: #2a2a2a;
+}
+
+.modal-drop-area {
+  box-sizing: border-box;
+  width: inherit;
+  height: 350px;
+  background: #fffbf5;
+  border: 1px solid #e8e7ea;
+  border-radius: 16px;
+  margin: 20px 0px;
+
+  background-image: url(../../public/submit/uploadimg.png);
+  background-position: center center;
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+.max{
+  width: 85%;
+}
+.uploadButton {
+  display: none;
+}
+
+.fileInputLabel {
+  display: inline-block;
+  padding: 12px 24px;
+  width: 45%;
+  height: 56px;
+  background: gray;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.submitBtn {
+  margin-top: 10px;
+  padding: 12px 24px;
+  width: 60%;
+  height: 56px;
+  background: #353430;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.fileInputLabel:hover {
+  background-color: gray;
+}
+
+.fileInputLabel:active {
+  background-color: gray;
+}
+
+.fileInputLabel::before {
+  content: "Choose file";
+}
+
+.uploadText {
+  box-sizing: border-box;
+  background: #fffbf5;
+  padding-top: 10px;
+
+  border: 1px solid #e8e7ea;
+}
+
+.uploadText p {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+  color: #565560;
+}

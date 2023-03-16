@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+
+.loadingmodal-container {
+  /* position: absolute; */
+  width: 90%;
+  height: 90%;
+  padding: 100px 20px 150px 20px;
+  margin-top: 40px;
+  background: #fffbf5;
+  /* background: red; */
+  border-radius: 16px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.loadingmodal-heading-text {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+
+  text-align: center;
+  letter-spacing: -0.025em;
+
+  color: #2a2a2a;
+}
+
+.loading-image{
+    height: 200px;
+
+  background-image: url(../../public/Loading/loadingImg.png);
+  background-position: center center;
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+.loading-bar{
+   height: 50px;
+  background-image: url(../../public/Loading/loadingBar.png);
+  background-position: center center;
+  background-size: initial;
+  background-repeat: no-repeat;
+}

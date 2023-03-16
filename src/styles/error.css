@@ -1,0 +1,125 @@
+:root {
+  --main-color: #fef6eb;
+  --nav-btn: #353430;
+  --white: #ffffff;
+  --btn-hover: #24231f;
+  --text: #2b2a30;
+  --orange: #fc655f;
+  --para: #565560;
+  --outline: #d0d0d5;
+  --big-but: #353430;
+  --congrats: #2a2a2a;
+}
+.Esuccess-background {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(22, 21, 24, 0.74);
+  z-index: 400;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Esuccess-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  padding: 120px 50px;
+}
+.Esuccess-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 50px;
+}
+
+.Esuccess-align h2 {
+  font-size: 20px;
+  font-weight: 700;
+  width: 60%;
+  text-align: center;
+  color: var(--congrats);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.Esuccess-align p {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--para);
+  margin-bottom: 10px;
+  width: 52%;
+  line-height: 20px;
+}
+.Esuccess-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5%;
+}
+.Esuccess-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 10rem;
+  width: 100%;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: var(--big-but);
+}
+.Esuccess-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.Esuccess-btn:active {
+  transform: scale(0.98);
+}
+@media screen and (max-width: 800px) {
+  .Esuccess-popup {
+    border-radius: 10px;
+    padding: 80px 10px;
+  }
+  .Esuccess-icon {
+    width: 20%;
+  }
+  .Esuccess-align h2 {
+    font-size: 17px;
+    width: 100%;
+  }
+  .Esuccess-align p {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .Esuccess-btn {
+    padding: 10px 90px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .Esuccess-icon {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Esuccess-icon {
+    width: 30%;
+  }
+  .Esuccess-align p {
+    font-size: 10px;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .Esuccess-btn {
+    padding: 14px 100px;
+  }
+}

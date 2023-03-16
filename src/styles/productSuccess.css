@@ -10,7 +10,7 @@
     --big-but: #353430;
     --congrats: #2A2A2A;
   }
-.success-background{
+.Psuccess-background{
   position: fixed;
   top: 0px;
   right: 0px;
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
 }
-.success-popup{
+.Psuccess-popup{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,14 +32,14 @@
     border-radius: 16px;
     padding: 100px 50px; 
 }
-.success-align{
+.Psuccess-align{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 10px 50px;
 }
-.success-align h2{
+.Psuccess-align h2{
    font-size: 20px;
    font-weight: 700;
    width: 60%;
@@ -48,7 +48,7 @@
    margin-top: 5%;
    margin-bottom: 5%;
 }
-.success-align p{
+.Psuccess-align p{
     font-size: 13px;
     font-weight: 600;
     text-align: center;
@@ -58,13 +58,13 @@
  .product-para{
     width: 60%;
  }
-.success-icon{
+.Psuccess-icon{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 5%;
 }
-.success-btn{
+.Psuccess-btn{
     border: none;
     border-radius: 4px;
     padding: 0.7rem 10rem;
@@ -76,52 +76,34 @@
     color: #FFFFFF;
     background-color: var(--big-but);
 }
-.success-button{
-    border: none;
-    border-radius: 4px;
-    padding: 0.7rem 10rem;
-    font-weight: 400;
-    font-size: 13px;
-    margin-top: 10px;
-    cursor: pointer;
-    color: #FFFFFF;
-    background-color: var(--big-but);
-}
-.success-btn:hover{
+.Psuccess-btn:hover{
     background-color: var(--btn-hover);
-}
-
-.success-button:hover{
-    background-color: var(--btn-hover);
-}
-.success-button:active{
-    transform:scale(0.98);
-  } 
-  .success-btn:active{
+} 
+  .Psuccess-btn:active{
     transform:scale(0.98);
   } 
   @media screen and (max-width: 800px){
-    .success-popup{
+    .Psuccess-popup{
         border-radius: 10px;
         padding: 80px 10px; 
     }
-    .success-icon{
+    .Psuccess-icon{
        width: 20%;
     }
-    .success-align h2{
+    .Psuccess-align h2{
         font-size: 17px;
         width: 100%;
      }
-     .success-align p{
+     .Psuccess-align p{
          font-size: 11px;
          font-weight: 600;
       }
-      .success-button{
+      .Psuccess-button{
         padding: 10px 90px;
     }
   }
   @media screen and (max-width: 765px){
-    .success-icon{
+    .Psuccess-icon{
         width:20%;
      }
   }
